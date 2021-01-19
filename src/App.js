@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       Weather App
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+
