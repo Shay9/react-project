@@ -8,10 +8,14 @@ export default function App() {
       Weather App
       </h1>
       <footer>
-        This project was coded by <a href="https://adoring-meninsky-e54200.netlify.app/"
-        target="_blank"> Shadea Nance  </a> and is
+        This project was coded by <a 
+        href="https://adoring-meninsky-e54200.netlify.app/"
+        target="_blank"
+        rel="noreferrer">
+           Shadea Nance  </a> and is
       <a href="https://github.com/Shay9/react-project"
       target="_blank"
+      rel="noreferrer"
       >
           {" "} open-sourced on GitHib
       </a>
