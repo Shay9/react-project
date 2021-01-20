@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./Weather.css"
 
-export default function Weather(){
+
+
+export default function Weather(props){
+    const[ready, setReady] = useState(false);
+    const[weatherData, setWeatherData] = useState({ ready: false });
+
+function handleResponse(response){
+    console.log(response.data);
+    setWeatherData({
+        temperature:response.data.main.temp,
+        description:response.data.weather[0].description,
+        iconUrl:`https://ssl.gstatic.com/onebox/weather/64/cloudy.png`,
+        wind:response.data.wind.speed,
+        humidity: response.data.main.humidity,
+        city: response.data.name,
+        time:"12:00"
+    });
+
+    setReady(true);
+}
+
+if (weatherData.ready){
     return (
        <div className="Weather"> 
        
@@ -10,7 +32,7 @@ export default function Weather(){
             <div className="col-9">
                 <input 
                 type="Search" 
-                Placeholder="Enter a City..." 
+                placeholder="Enter a City..." 
                 className="form-control"
                 />
            </div>
@@ -23,17 +45,28 @@ export default function Weather(){
             </div>
             </div>
        </form>
-       <h1 className="city"> Toronto</h1>
-       <div className="time">12:00 PM</div>
+       <h1 className="city"> {weatherData.city}</h1>
+       <div className="time"> {weatherData.time} PM</div>
        <ul className="Weather-description">
-       <li> Description: Snowing</li>
-       <li> Humidity: 25%</li>
-       <li> Wind: 12km/h</li>
+       <li className="text-capitalize"> Description: {weatherData.description}</li>
+       <li> Humidity: {weatherData.humidity}%</li>
+       <li> Wind: {weatherData.wind}</li>
        </ul>
-       <h2 className="temperature"> 23° </h2> 
+       <h2 className="temperature"> {Math.round(weatherData.temperature)}° </h2> 
        <span className="conversion"> C | F </span>
-       <div className="weather-image">  image on left</div>
+       <img src={weatherData.iconUrl}
+            alt={weatherData.description}
+            className="weather-image" /> 
        
        </div> 
     )
+}
+else{
+    const apiKey = "a35a6fc9aa256480d5ede5662dad54ec";
+    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`
+    axios.get(apiUrl).then(handleResponse)
+
+    return "Loading...";
+} 
+    
 }
