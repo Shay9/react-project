@@ -10,17 +10,17 @@ export default function App() {
       <div className="container"> 
 
       <Weather />
-      <footer>
+      <footer className="footer">
         This project was coded by <a 
         href="https://adoring-meninsky-e54200.netlify.app/"
         target="_blank"
         rel="noreferrer">
-           Shadea Nance  </a> and is
+           Shadea Nance  </a> and is open-sourced on
       <a href="https://github.com/Shay9/react-project"
       target="_blank"
       rel="noreferrer"
       >
-          {" "} open-sourced on GitHib
+          {" "}  GitHub
       </a>
       </footer>
       </div>

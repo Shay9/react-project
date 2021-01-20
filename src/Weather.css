@@ -9,6 +9,8 @@
   color: whitesmoke;
   position: relative;
   top: 60px;
+  margin: auto;
+  max-width: 700px;
 }
 
 .form-control {
@@ -27,19 +29,20 @@
 
 .city {
   position: relative;
-  top: 40px;
+  top: 50px;
   left: 40px;
 }
 
 .time {
   position: relative;
-  top: -20px;
+  top: -10px;
   left: 420px;
   font-size: 40px;
 }
 
 .Weather-description {
   list-style: none;
+  line-height: 40px;
   font-size: 25px;
   position: relative;
   top: 20px;
