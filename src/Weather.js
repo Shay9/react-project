@@ -18,20 +18,21 @@ export default function Weather(){
                  <input 
                  type="submit" 
                  value="Search" 
-                 className="btn btn-primary"
+                 className="btn btn-primary mycustombtn"
                  />
             </div>
             </div>
        </form>
-       <h1> Toronto</h1>
-       <div>12:00 PM</div>
-       <ul>
+       <h1 className="city"> Toronto</h1>
+       <div className="time">12:00 PM</div>
+       <ul className="Weather-description">
        <li> Description: Snowing</li>
        <li> Humidity: 25%</li>
        <li> Wind: 12km/h</li>
        </ul>
-       <h1> 23° C</h1>
-       <div> image on left</div>
+       <h2 className="temperature"> 23° </h2> 
+       <span className="conversion"> C | F </span>
+       <div className="weather-image">  image on left</div>
        
        </div> 
     )
