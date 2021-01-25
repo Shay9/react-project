@@ -1,0 +1,10 @@
+.WeatherForecastDisplay {
+  position: relative;
+  left: 250px;
+  bottom: 70px;
+  margin: -10px;
+}
+
+.forecastTime {
+  padding-bottom: 20px;
+}
