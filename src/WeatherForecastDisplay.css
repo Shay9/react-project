@@ -1,8 +1,9 @@
 .WeatherForecastDisplay {
   position: relative;
-  left: 250px;
+  left: 190px;
   bottom: 70px;
-  margin: -10px;
+  margin: -10px 0;
+  text-align: center;
 }
 
 .forecastTime {

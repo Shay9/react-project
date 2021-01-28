@@ -17,7 +17,7 @@ export default function Weatherinfo(props){
           <li> Wind: {Math.round(props.data.wind)} km/h</li>
         </ul>
         <WeatherTemperature celcius={props.data.temperature} />
-        <WeatherIcon code={props.data.icon} alt={props.data.description} />       
+        <WeatherIcon code={props.data.iconUrl} alt={props.data.description} />
         
           </div>
     );

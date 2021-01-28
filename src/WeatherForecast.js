@@ -20,7 +20,7 @@ if (loaded && props.city === forecast.city.name){
                 <WeatherForecastDisplay data={forecast.list[2]} />
                 <WeatherForecastDisplay data={forecast.list[3]} />
                 <WeatherForecastDisplay data={forecast.list[4]} />
-                <WeatherForecastDisplay data={forecast.list[5]} />
+                
         </div>
     );
 }
