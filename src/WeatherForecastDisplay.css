@@ -1,9 +1,5 @@
-.WeatherForecastDisplay {
-  position: relative;
-  left: 190px;
-  bottom: 70px;
-  margin: -10px 0;
-  text-align: center;
+.WeatherForecastDisplay img {
+  width: 100%;
 }
 
 .forecastTime {

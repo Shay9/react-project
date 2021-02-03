@@ -14,12 +14,13 @@ function handleForecast(response){
 }
 if (loaded && props.city === forecast.city.name){
     return (
-        <div className="weatherForecast row">
+        <div className="weatherForecast row text-center">
                 <WeatherForecastDisplay data={forecast.list[0]} />
                 <WeatherForecastDisplay data={forecast.list[1]} />
                 <WeatherForecastDisplay data={forecast.list[2]} />
                 <WeatherForecastDisplay data={forecast.list[3]} />
                 <WeatherForecastDisplay data={forecast.list[4]} />
+                <WeatherForecastDisplay data={forecast.list[5]} />
                 
         </div>
     );
@@ -27,7 +28,7 @@ if (loaded && props.city === forecast.city.name){
 
 else{
     let apiKey = `a35a6fc9aa256480d5ede5662dad54ec`;
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
     axios.get(url).then(handleForecast);
     return null;
 }
