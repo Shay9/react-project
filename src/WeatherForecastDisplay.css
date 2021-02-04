@@ -1,7 +1,15 @@
-.WeatherForecastDisplay img {
+.weatherForecast {
+  position: relative;
+  right: 500px;
   width: 100%;
 }
 
 .forecastTime {
-  padding-bottom: 20px;
+  position: relative;
+  top: -20px;
+}
+
+.temp {
+  position: relative;
+  bottom: 175px;
 }

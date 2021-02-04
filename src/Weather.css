@@ -51,20 +51,20 @@
 
 .temperature {
   position: relative;
-  top: 80px;
-  left: 30px;
+  top: -70px;
+  left: 500px;
   font-size: 60px;
 }
 
 .weather-image {
   position: relative;
-  left: 85px;
-  top: -10px;
+  left: 520px;
+  top: -155px;
 }
 
 .conversion {
   position: relative;
-  left: 100px;
-  top: 45px;
+  left: 570px;
+  top: -200px;
   font-size: 20px;
 }

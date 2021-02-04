@@ -17,8 +17,8 @@ export default function WeatherForecastDisplay(props){
     return(
         <div className="WeatherForecastDisplay col">
             <div className="forecastTime">{hours()} </div> 
-            <WeatherIcon code={ `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt={props.data.description} />
-            <p>
+            <WeatherIcon  code={ `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt={props.data.description} />
+            <p className="temp">
             {temperature()}
             </p>
             </div>
