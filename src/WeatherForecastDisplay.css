@@ -1,15 +1,11 @@
-.weatherForecast {
-  position: relative;
-  right: 500px;
+.weatherForecast img {
   width: 100%;
 }
 
 .forecastTime {
   position: relative;
-  top: -20px;
 }
 
 .temp {
   position: relative;
-  bottom: 175px;
 }

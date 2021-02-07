@@ -5,66 +5,40 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  width: 700px;
   color: #faf9f9;
   position: relative;
-  top: 60px;
-  margin: auto;
+  margin: 60px auto auto;
   max-width: 700px;
   border-radius: 5px;
+  padding: 20px 40px;
 }
-
-.form-control {
+​ ​ .form-control {
   background-color: transparent;
   position: relative;
-  left: 40px;
-  top: 20px;
   border-color: whitesmoke;
 }
-
-.mycustombtn {
+​ .mycustombtn {
   position: relative;
-  top: 20px;
-  left: 40px;
 }
-
-.city {
-  position: relative;
-  top: 50px;
-  left: 40px;
-}
-
-.time {
-  position: relative;
-  top: -10px;
-  left: 400px;
+​ ​ .time {
   font-size: 40px;
 }
-
-.Weather-description {
+​ .Weather-description {
   list-style: none;
   line-height: 40px;
   font-size: 25px;
   position: relative;
-  top: 20px;
+  padding: 0;
 }
-
-.temperature {
+​ .temperature {
   position: relative;
-  top: -70px;
-  left: 500px;
   font-size: 60px;
+  vertical-align: top;
 }
-
-.weather-image {
+​ .weather-image {
   position: relative;
-  left: 520px;
-  top: -155px;
 }
-
-.conversion {
+​ .conversion {
   position: relative;
-  left: 570px;
-  top: -200px;
   font-size: 20px;
 }
