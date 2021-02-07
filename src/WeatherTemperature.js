@@ -1,18 +1,14 @@
-import React, {useState} from "react";
-
+import React, { useState } from "react";
 export default function WeatherTemperature(props) {
   const [unit, setUnit] = useState(`celcius`);
-​
   function convertToFarenheit(event) {
     event.preventDefault();
     setUnit("farenheit");
   }
-​
   function convertToCelcius(event) {
     event.preventDefault();
     setUnit("celcius");
   }
-​
   if (unit === `celcius`) {
     return (
       <div className="WeatherTemperature">
@@ -30,7 +26,6 @@ export default function WeatherTemperature(props) {
     );
   } else {
     let farenheit = (props.celcius * 9) / 5 + 32;
-​
     return (
       <div className="WeatherTemperature">
         <h2 className="temperature">
