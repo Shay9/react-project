@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import WeatherForecastDisplay from "./WeatherForecastDisplay";
 import axios from "axios";
-​
 export default function WeatherForecast(props) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
-​
   function handleForecast(response) {
     setForecast(response.data);
     setLoaded(true);

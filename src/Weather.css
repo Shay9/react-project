@@ -11,6 +11,8 @@
   max-width: 700px;
   border-radius: 5px;
   padding: 20px 40px;
+  list-style: none;
+  line-height: 40px;
 }
 ​ ​ .form-control {
   background-color: transparent;
@@ -40,5 +42,5 @@
 }
 ​ .conversion {
   position: relative;
-  font-size: 20px;
+  font-size: 10px;
 }

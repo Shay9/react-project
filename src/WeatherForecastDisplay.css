@@ -9,3 +9,8 @@
 .temp {
   position: relative;
 }
+
+.WeatherForecastDisplay {
+  position: relative;
+  top: 70px;
+}
